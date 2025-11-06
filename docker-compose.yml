@@ -1,0 +1,8 @@
+
+services:
+  openaudiomc-client:
+    image: ghcr.io/charlesflc/openaudiomc-client:latest
+    container_name: openaudiomc-client
+    ports:
+      - "8080:80"
+    restart: unless-stopped
